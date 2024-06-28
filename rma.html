@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Navbar | CodingNepal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <!--NAV BAR -->
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="home.html" class="logo">
+      <img src="logooo-removebg-preview.png" alt="Logotipo">
+    </a>
+    <ul class="Navbar-menu">
+      <li><a  href="home.html">Home</a></li>
+      <li><a href="marcas.html">Catálogo</a></li>
+      <li><a href="portefolio.html">Portefólio</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a class="active" href="rma.html">RMA</a></li>
+
+    </ul>
+  </nav>
+  <!--NAV BAR -->
+
+  <div class="container">
+  
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <h3 class="titulo">Formulário de RMA</h3>
+      <div class="row">
+        <div class="col">
+          <label for="name">Cliente</label>
+          <br>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="col">
+          <label for="pessoa">Pessoa de Contacto</label>
+          <br>
+          <input type="text" id="pessoa" name="pessoa" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="email">Contacto Email</label>
+          <br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="col">
+          <label for="data">Data</label>
+          <br>
+          <input type="date" id="data" name="data" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="factura">Nº da Factura (Opcional)</label>
+          <br>
+
+          <input type="text" id="factura" name="factura">
+        </div>
+        <div class="col">
+          <label for="Sn">Nº de Série do Equipamento (Se Aplicável)</label>
+          <br>
+
+          <input type="text" id="Sn" name="Sn">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="message">Descrição da Avaria</label>
+          <br>
+          <textarea id="message" name="message" rows="4" placeholder="Descreva a avaria detalhadamente"></textarea>
+        </div>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="rma.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

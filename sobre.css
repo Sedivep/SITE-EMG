@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a.logo img {
+  width: 220px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Isso garante que a altura seja ajustada automaticamente para manter a proporção original da imagem */
+  display: block; /* Torna a imagem um bloco para alinhar horizontalmente */
+  margin: 0 auto; /* Define as margens para centralizar horizontalmente */
+}
+
+/* Outras regras de estilo para a barra de navegação */
+nav {
+  background: #E0C37E;
+  height: 80px;
+  width: 100%;
+  display: flex; /* Torna a barra de navegação um contêiner flexível */
+  justify-content: space-between; /* Distribui os itens uniformemente, empurrando os itens para os lados */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 0 20px; /* Ajuste o espaçamento conforme necessário */
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.Navbar-menu a:hover{
+  background: black;
+  transition: .5s;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{ 
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    width: 1000px; /* Ajuste conforme necessário */
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 4em;
+    color: #333;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.5em;
+    color: #666;
+    margin-top: 50px;
+}
+
+
+/* Adicione essas regras CSS no seu arquivo de estilo (sobre.css) */
+
+.our-history {
+    background-color: #f4f4f4; /* Cor de fundo mais cinzento, ajuste conforme desejado */
+    padding: 50px;
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no início da caixa */
+    text-align: justify;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container h2 {
+    font-size: 4em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1.5em;
+    color: #666;
+}
+
+.image-container {
+    flex: 1;
+    margin-left: 30px; /* Adiciona uma margem à esquerda para separar o texto da imagem */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-container h2 {
+    align-self: flex-start;
+}  
+
+
+.destaques-title {
+    font-size: 4    em; /* Tamanho da fonte a ser ajustado conforme necessário */
+    color: #333; /* Cor do texto a ser ajustada conforme necessário */
+    text-align: center; /* Alinhamento do texto */
+    margin-top: 20px; /* Espaçamento superior opcional */
+
+    /* Adicione a linha abaixo para a faixa após o título */
+    position: relative;
+}
+
+/* Adicione a regra CSS para a faixa após o título */
+.destaques-title::after {
+    content: "";
+    display: block;
+    width: 50px; /* Largura da faixa a ser ajustada conforme necessário */
+    height: 3px; /* Altura da faixa a ser ajustada conforme necessário */
+    background-color: #c87e4f; /* Cor da faixa a ser ajustada conforme desejado */
+    margin: 10px auto; /* Espaçamento e centralização horizontal da faixa */
+}
+
+
+img {
+  margin: 50px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-around; /* Ajuste conforme desejado */
+  align-items: flex-start;
+  padding: 50px 0; /* Ajuste conforme desejado */
+}
+
+.map-container {
+  flex: 1;
+  margin-right: 20px; /* Ajuste conforme desejado */
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 2em; /* Tamanho da fonte do título, ajuste conforme desejado */
+  color: #333; /* Cor do texto do título, ajuste conforme desejado */
+  margin-bottom: 20px; /* Espaçamento inferior do título, ajuste conforme desejado */
+}
+
+.contact-info p {
+  font-size: 1.2em; /* Tamanho da fonte do texto, ajuste conforme desejado */
+  color: #666; /* Cor do texto, ajuste conforme desejado */
+  line-height: 1.5;
+}

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a.logo img {
+  width: 220px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Isso garante que a altura seja ajustada automaticamente para manter a proporção original da imagem */
+  display: block; /* Torna a imagem um bloco para alinhar horizontalmente */
+  margin: 0 auto; /* Define as margens para centralizar horizontalmente */
+}
+
+/* Outras regras de estilo para a barra de navegação */
+nav {
+  background: #E0C37E;
+  height: 80px;
+  width: 100%;
+  display: flex; /* Torna a barra de navegação um contêiner flexível */
+  justify-content: space-between; /* Distribui os itens uniformemente, empurrando os itens para os lados */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 0 20px; /* Ajuste o espaçamento conforme necessário */
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.Navbar-menu a:hover{
+  background: black;
+  transition: .5s;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{ 
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+  
+section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+  
+  
+  .logo-container {
+      text-align: center;
+  }
+  
+  .logo-container img {
+      width: 800px; /* Ajuste conforme necessário */
+  }
+  
+  .content {
+      text-align: center;
+      padding: 50px;
+  }
+  
+
+  p {
+      font-size: 2em;
+      color: #666;
+      margin-top: 50px;
+  }
+
+
+  .destaques-title {
+    font-size: 4em; /* Tamanho da fonte a ser ajustado conforme necessário */
+    color: #333; /* Cor do texto a ser ajustada conforme necessário */
+    text-align: center; /* Alinhamento do texto */
+    margin-top: 20px; /* Espaçamento superior opcional */
+
+    /* Adicione a linha abaixo para a faixa após o título */
+    position: relative;
+}
+
+/* Adicione a regra CSS para a faixa após o título */
+.destaques-title::after {
+    content: "";
+    display: block;
+    width: 50px; /* Largura da faixa a ser ajustada conforme necessário */
+    height: 3px; /* Altura da faixa a ser ajustada conforme necessário */
+    background-color: #c87e4f; /* Cor da faixa a ser ajustada conforme desejado */
+    margin: 10px auto; /* Espaçamento e centralização horizontal da faixa */
+}
+
+
+.gallery {
+    padding-top: 50px;
+    text-align: center;
+    margin: 10px 50px;
+}
+
+.gallery img{
+    padding: 10px;
+    transition: 1s;
+    width: 25%; /* Garante que a imagem ocupa 100% da largura do contêiner */
+  height: auto;
+}
+
+.gallery img:hover{
+    transform: scale(1.05);
+}

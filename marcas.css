@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a.logo img {
+  width: 220px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Isso garante que a altura seja ajustada automaticamente para manter a proporção original da imagem */
+  display: block; /* Torna a imagem um bloco para alinhar horizontalmente */
+  margin: 0 auto; /* Define as margens para centralizar horizontalmente */
+}
+
+/* Outras regras de estilo para a barra de navegação */
+nav {
+  background: #E0C37E;
+  height: 80px;
+  width: 100%;
+  display: flex; /* Torna a barra de navegação um contêiner flexível */
+  justify-content: space-between; /* Distribui os itens uniformemente, empurrando os itens para os lados */
+  align-items: center; /* Centraliza os itens verticalmente */
+  padding: 0 20px; /* Ajuste o espaçamento conforme necessário */
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.Navbar-menu a:hover{
+  background: black;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{ 
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+.destaques-title {
+    font-size: 4em; /* Tamanho da fonte a ser ajustado conforme necessário */
+    color: #333; /* Cor do texto a ser ajustada conforme necessário */
+    text-align: center; /* Alinhamento do texto */
+    margin-top: 20px; /* Espaçamento superior opcional */
+
+    /* Adicione a linha abaixo para a faixa após o título */
+    position: relative;
+}
+
+/* Adicione a regra CSS para a faixa após o título */
+.destaques-title::after {
+    content: "";
+    display: block;
+    width: 50px; /* Largura da faixa a ser ajustada conforme necessário */
+    height: 3px; /* Altura da faixa a ser ajustada conforme necessário */
+    background-color: #c87e4f; /* Cor da faixa a ser ajustada conforme desejado */
+    margin: 10px auto; /* Espaçamento e centralização horizontal da faixa */
+}
+
+
+
+
+/* Seus estilos existentes aqui */
+
+.brand-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1em;
+  }
+  
+  .brand-card {
+    border: 2px solid #ccc; /* Adiciona uma borda de 2 pixels sólida cinza ao redor do cartão */
+    background: white;
+    padding: 1em;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    text-align: center;
+  }
+  
+  .brand-card img {
+    width: 80%; /* Ajusta a largura da imagem para 80% do contêiner */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .brand-card:hover img {
+    transform: scale(1.1);
+  }
+  
+/* Seus estilos existentes aqui */
+
+
+
+/* ... Seus estilos existentes aqui */
+
+/* Adicione este estilo ao seu CSS */
+
+/* ... Seus estilos existentes aqui */
+
+/* Adicione este estilo ao seu CSS */
+
+.brands .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  background: white;
+  height: 200px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  color: var(--dark);
+  text-align: center;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+.wrapper {
+    padding: 60px;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 80%;
+    background: #fff;
+    margin: 0 auto; /* Centralizar o conteúdo */
+
+    border-radius: 13px;
+  }
+  .wrapper .icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+  }
+  .icon:first-child {
+    left: 0;
+    display: none;
+    background: linear-gradient(90deg, #fff 70%, transparent);
+  }
+  .icon:last-child {
+    right: 0;
+    justify-content: flex-end;
+    background: linear-gradient(-90deg, #fff 70%, transparent);
+  }
+  .icon i {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+  }
+  .icon i:hover {
+    background: #efedfb;
+  }
+  .icon:first-child i {
+    margin-left: 15px;
+  } 
+  .icon:last-child i {
+    margin-right: 15px;
+  } 
+  .wrapper .tabs-box {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  .tabs-box.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
+  }
+  .tabs-box .tab {
+    cursor: pointer;
+    font-size: 1.18rem;
+    white-space: nowrap;
+    background: #f5f4fd;
+    padding: 13px 20px;
+    border-radius: 30px;
+    border: 1px solid #d8d5f2;
+  }
+  .tabs-box .tab:hover{
+    background: #efedfb;
+  }
+  .tabs-box.dragging .tab {
+    user-select: none;
+    pointer-events: none;
+  }
+  .tabs-box .tab.active{
+    color: #fff;
+    background: #5372F0;
+    border-color: transparent;
+  }
+
+/* Modifique os estilos CSS para controlar o tamanho dos logotipos */
+
+.logo-slider {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.logo-slider img {
+    width: 80%; /* Defina a largura desejada para os logotipos */
+    height: auto;
+    margin-right: 10px;
+}
+
+
+
+
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+.wrapper .carousel img {
+  height: 100px; /* Defina a altura desejada para os logotipos */
+  object-fit: contain; /* Mantém a proporção original da imagem */
+  margin-left: 10px; /* Adiciona uma margem esquerda entre as imagens */
+  margin-right: 10px; /* Adiciona uma margem direita entre as imagens */
+  border: 1px solid #ccc; /* Adiciona uma borda de 1 pixel sólida cinza */
+  border-radius: 5px; /* Adiciona uma borda arredondada */
+}
+
+.wrapper {
+  padding: 20px 0; /* Adiciona um espaçamento interno acima e abaixo do carrossel */
+  overflow: hidden; /* Oculta o conteúdo que ultrapassa os limites do contêiner */
+  position: relative; /* Permite posicionar as setas dentro do contêiner */
+}
+
+.wrapper .carousel {
+  font-size: 0; /* Oculta o texto dentro do carrossel */
+  white-space: nowrap; /* Impede que os logotipos quebrem em várias linhas */
+  scroll-behavior: smooth; /* Adiciona uma transição suave durante a rolagem */
+  transition: transform 0.5s ease; /* Adiciona uma transição suave ao deslizar o carrossel */
+}
+
+.wrapper .carousel img {
+  display: inline-block; /* Torna as imagens do carrossel exibidas em linha */
+  vertical-align: middle; /* Alinha verticalmente as imagens no centro do contêiner */
+}
+
+.wrapper .icon {
+  position: absolute; /* Permite posicionar as setas em relação ao contêiner */
+  top: 50%; /* Posiciona as setas verticalmente no centro do contêiner */
+  transform: translateY(-50%); /* Ajusta a posição vertical das setas */
+  width: 30px; /* Define a largura das setas */
+  height: 30px; /* Define a altura das setas */
+  background-color: rgba(255, 255, 255, 0.5); /* Adiciona um fundo semitransparente para as setas */
+  display: flex; /* Permite alinhar os ícones das setas verticalmente */
+  justify-content: center; /* Alinha os ícones das setas horizontalmente no centro */
+  align-items: center; /* Alinha os ícones das setas verticalmente no centro */
+  cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse sobre as setas */
+}
+
+.wrapper .icon i {
+  color: #333; /* Define a cor dos ícones das setas */
+  font-size: 20px; /* Define o tamanho dos ícones das setas */
+}
+
+.wrapper .icon:first-child {
+  left: 0; /* Posiciona a seta esquerda no início do contêiner */
+}
+
+.wrapper .icon:last-child {
+  right: 0; /* Posiciona a seta direita no final do contêiner */
+}
